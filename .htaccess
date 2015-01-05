@@ -1,0 +1,5 @@
+Options +FollowSymlinks
+RewriteEngine on
+Redirect /index.html http://www.jsonfiles.com/v2/
+rewritecond %{http_host} ^jsonfiles.com [nc]
+rewriterule ^(.*)$ http://www.jsonfiles.com/v2/$1 [r=301,nc]

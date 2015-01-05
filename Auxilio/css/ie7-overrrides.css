@@ -1,0 +1,6 @@
+@charset "utf-8";
+/* CSS Document */
+
+
+.sub-promo-bg { margin: -108px auto 0 auto; width: 960px; height: 235px; background: #000; opacity: 0.3; filter: alpha(opacity=30); border-top: 1px solid #e5f1f4; }
+a.left { position: absolute; margin: -273px 0 0 15px; z-index: 99999; }

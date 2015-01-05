@@ -1,0 +1,132 @@
+@charset "utf-8";
+/* CSS Document */
+
+/* Browser Resets ----- */
+body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, 
+form, fieldset, input, p, blockquote, table, th, td, embed, object, select, textarea { padding: 0; margin: 0; }
+table { border-collapse: collapse; border-spacing: 0; }
+fieldset, img, abbr { border: 0; }
+address, caption, cite, code, dfn, em, 
+h1, h2, h3, h4, h5, h6, strong, th, var { font-weight: normal; font-style: normal; }
+ul { list-style: none; }
+caption, th { text-align: left; }
+h1, h2, h3, h4, h5, h6 { font-size: 1.0em; }
+q:before, q:after { content: ''; }
+a, ins { text-decoration: none; }
+
+/* Generic Styles ----- */
+body { margin: auto; background: #000; }
+a:link, a:visited { color: #006600; }
+a:hover { text-decoration: underline; }
+.bold { font-weight: bold; }
+.margBottom5 { margin-bottom: 5px; }
+.padding5 { padding: 5px; }
+.padding10 { padding: 10px; }
+.pad-right-zero { padding-right: 0px; }
+
+/* ClearFix ----- */
+.clearfix:after { content: "."; display: block; clear: both; visibility: hidden; line-height: 0; height: 0; }
+.clearfix {	display: inline-block; } 
+html[xmlns] .clearfix { display: block; }
+* html .clearfix { height: 1%; }
+
+/* UI Structure ----- */
+.wrapper { margin: 0 auto 0 auto; width: 980px; height: auto; }
+.header { width: 980px; height: 113px; background: url(../../images/ui/hp-header-footer-sprinte.jpg) no-repeat left top; overflow: hidden; }
+.main-image-cont { width: 980px; height: 542px; background: url(../../images/ui/hp-panels.jpg) no-repeat left top; overflow: hidden; }
+.int-main-image-cont { width: 980px; height: auto; background: url(../../images/ui/int-main-image-sprite.jpg) repeat-y -980px top; }
+.int-main-image-top { width: 980px; height: auto; background: url(../../images/ui/int-main-image-sprite.jpg) no-repeat left top; }
+.int-main-image-middle { width: 980px; height: auto; }
+.int-main-image-bottom { width: 980px; height: 70px; background: url(../../images/ui/int-main-image-sprite.jpg) no-repeat -1960px bottom; }
+.footer { width: 980px; height: 113px; background: url(../../images/ui/hp-header-footer-sprinte.jpg) no-repeat left bottom; overflow: hidden; }
+
+/* Header Elements ----- */
+.logo-hotspot { position: absolute; margin: 42px 0 0 35px; width: 458px; height: 114px; }
+.top-nav { position: absolute; margin: 39px 0 0 490px; width: auto; height: 34px; }
+.top-nav ul { }
+.top-nav ul li { padding-right: 4px; display: inline; float: left; }
+.top-nav ul li a { display: block; }
+.about-me a:link, .about-me a:visited { width: 105px; height: 34px; background: url(../../images/ui/hp-top-nav-sprite.jpg) no-repeat left top; }
+.about-me a:hover { background: url(../../images/ui/hp-top-nav-sprite.jpg) no-repeat left bottom; }
+.proj-worked-on a:link, .proj-worked-on a:visited  { width: 208px; height: 34px; background: url(../../images/ui/hp-top-nav-sprite.jpg) no-repeat -109px top; }
+.proj-worked-on a:hover { background: url(../../images/ui/hp-top-nav-sprite.jpg) no-repeat -109px bottom; }
+.send-message a:link, .send-message a:visited  { width: 140px; height: 34px; background: url(../../images/ui/hp-top-nav-sprite.jpg) no-repeat -317px top; }
+.send-message a:hover { background: url(../../images/ui/hp-top-nav-sprite.jpg) no-repeat -317px bottom; }
+
+/* Main Content Area ----- */
+.panel-wrapper {}
+.panel-left, .panel-center, .panel-right { position: absolute; width: 254px; height: 203px; /*border: 1px solid #fff;*/ }
+.panel-left span, .panel-center span, .panel-right span { display: none; }
+.panel-left { margin: 299px 0 0 58px; }
+.panel-center { margin: 299px 0 0 362px; }
+.panel-right { margin: 299px 0 0 666px; }
+
+/* Homepage Content ---------- */
+.whats-new-img { width: 100%; height: 28px; background: url(../../images/img-text/whats-new.gif) no-repeat left top; }
+.whats-new-cont { height: 165px; overflow-y: auto; }
+.whats-new-cont p { line-height: 22px; }
+
+.proj-involve-txt { margin: 35px 0 0 10px; width: 263px; height: 34px; background: url(../images/img-text/proj-involvement.gif) no-repeat left top; }
+.project-showcase-img { width: 100%; height: 36px; background: url(../../images/img-text/project-showcase.gif) no-repeat left top; }
+.proj-showcase-cta { padding-top: 10px; width: 245px; height: 160px; text-align: center; background: url(../images/hp-proj-showcase-sprite.gif) no-repeat left 4px; }
+.proj-showcase-cta:hover { background: url(../images/hp-proj-showcase-sprite.gif) no-repeat left -190px; }
+
+.contact-info-img { width: 100%; height: 28px; background: url(../../images/img-text/contact-info.gif) no-repeat left top; }
+.contact-list-padding { padding-top: 10px; }
+.contact-list-padding ul { padding-left: 10px; line-height: 22px; }
+.btn-contact { margin: 5px 0; width: 105px; height: 34px; background: url(../images/buttons/btn_contact-sprite.gif) no-repeat left top; border: none; cursor: pointer; }
+.btn-contact:hover { background: url(../images/buttons/btn_contact-sprite.gif) no-repeat left -34px; border: none; cursor: pointer; }
+.btn-linkedin { margin: 5px 0; width: 105px; height: 34px; background: url(../images/buttons/btn_linkedin-sprite.gif) no-repeat left top; border: none; cursor: pointer; }
+.btn-linkedin:hover { background: url(../images/buttons/btn_linkedin-sprite.gif) no-repeat left -34px; border: none; cursor: pointer; }
+
+/* Project Showcase Image Text/Content ---------- */
+.personal-philosophy { width: 541px; height: 28px; background: url(../images/img-text/personal-philosophy.gif) no-repeat left top; }
+.personal-philosophy-txt { margin-right: 375px; margin-bottom: 15px; }
+
+.project-showcase { width: 541px; height: 28px; background: url(../images/img-text/proj-showcase.gif) no-repeat left top; }
+.project-showcase-panel { width: 551px; height: 240px; background: url(../images/ui/showcase-bg.gif) no-repeat left top; overflow-x: hidden; }
+
+/* Project Showcase Thumbnail Images ---------- */
+.showcase-thumbnails-cont {}
+.showcase-wrapper { margin: 5px; padding: 5px 5px 15px 5px; height: 170px; list-style-type: none; overflow-x: scroll; overflow-y: hidden; }
+.showcase-thumbnails-cont li { #display: inline; }
+.showcase-thumbnails-cont li a:link, .showcase-thumbnails-cont li a:visited { float: left; clear: right; }
+
+/* Project Showcase Side Panel ---------- */
+.side-panel { margin: -10px 28px 0 0; width: 285px; height: 310px; background: url(../images/ui/showcase-side-panel-bg.gif) no-repeat left top; float: right; }
+.ajax-init-cont,
+.exp-content,
+.td-content,
+.channel-content { width: 238px; height: 190px; padding: 10px 10px 0 25px; overflow-y: auto; overflow-x: hidden; }
+.ajax-init-cont a:link, .ajax-init-cont a:visited, .exp-content a:link, .exp-content a:visited, .td-content a:link, .td-content a:visited, .channel-content a:link,
+.channel-content a:visited { color: #006699 /*#009900*/; }
+
+/* About Me ---------- */
+.about-me-img { width: 848px; height: 40px; background: url(../images/img-text/about-me.gif) no-repeat left top; }
+.about-me-txt {}
+.the-fam-photo { margin: 8px 30px 0 0; width: 364px; height: 250px; background: url(../images/the-fam-v2.jpg) no-repeat left top; display: block; float: right; }
+.my-resume-downloads { position: absolute; margin: 0 0 0 655px; }
+.about-popup-panel { margin: 0 10px 0 -8px; width: 275px; height: 204px; background: url(../images/ui/about-popup-panel.gif) no-repeat left top; float: left; }
+.my-interest { margin: 65px 0 0 30px; }
+.my-interest-txt { margin: 0 20px 0 0; width: 275px; height: 304px; background: url(../images/img-text/my-interest-text.gif) no-repeat left top; float: left; }
+
+/* Contact Me ---------- */
+.contact-title { margin: 0; padding: 0; width: 557px; height: 28px; background: url(../images/img-text/contact-me.gif) no-repeat left top; }
+.cont-form-wrapper { margin: 10px 0 0 -10px; padding: 0; width: 873px; height: 275px; background: url(../images/ui/contact-form-bg.gif) no-repeat left top; }
+.contact-form { margin: 0; padding: 0; width: 290px; }
+.contact-form li { font-size: 18px; line-height: 25px; text-align: right; }
+.contact-form li input { width: 200px; border: 1px solid #CCCCCC; }
+.contact-form li select { width: 203px; }
+.form-buttons-wrapper { position: absolute; margin: -40px 0 0 335px; width: 210px; }
+.form-buttons-wrapper li { float: left; clear: right; }
+.btn-reset { width: 105px; height: 34px; background: url(../images/buttons/btn-reset-sprite.gif) no-repeat left top; border: none; cursor: pointer; }
+.btn-reset:hover { background: url(../images/buttons/btn-reset-sprite.gif) no-repeat left bottom; border: none; cursor: pointer; }
+.btn-submit { width: 105px; height: 34px; background: url(../images/buttons/btn-submit-sprite.gif) no-repeat left top; border: none; cursor: pointer; }
+.btn-submit:hover { background: url(../images/buttons/btn-submit-sprite.gif) no-repeat left bottom; border: none; cursor: pointer; }
+.my-contact-info-wrapper { margin: 25px 30px 0 0; width: 250px; float: right; }
+.my-contact-info { font-size: 18px; line-height: 24px; color: #999999; }
+.ad-banner-wrapper { position: absolute; margin: -90px 0 0 595px; width: 250px; }
+
+/* Form Confirmation ---------- */
+.conf-wrapper { margin: 10px 0 0 -10px; padding: 0; width: 873px; height: 275px; background: url(../images/ui/comfirmation-bg.gif) no-repeat left top; }
+.conf-ad-banner-wrapper { position: absolute; margin: 160px 0 0 595px; }

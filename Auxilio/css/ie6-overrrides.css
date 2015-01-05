@@ -1,0 +1,48 @@
+@charset "utf-8";
+/* CSS Document */
+
+/* Layout Styles
+------------------------------------------------------------ */
+.header .logo { margin: 0 0 0 23px; width: 133px; height: 44px; background: url(../images/logo/auxilio-logo.gif) no-repeat top left; clear: right; }
+.building-bg { margin: 0 auto; width: 960px; height: 675px; background: url(../images/background-images/slide-bg.jpg) no-repeat top left; }
+.sub-promo-bg { margin: -265px auto 0 auto; width: 960px; height: 234px; background: none; border-top: 1px solid #acacac; }
+
+/* Header Navigation Styles
+------------------------------------------------------------ */
+.header-nav-wrapper ul { padding: 6px 5px 0; }
+.header-nav-wrapper ul li.pipe { width: 1px; height: 24px; background: url(../images/background-images/vert-pipe.gif) no-repeat center left; }
+
+/* Promo Slider Styles
+------------------------------------------------------------ */
+.scrollable { margin: -570px auto 0 auto; position: relative; overflow: hidden; width: 960px; height: 304px; clear: both; }
+a.browse { position: absolute; width: 28px; height: 25px; background: url(../images/buttons/arrow-next-prev-sprite.gif) no-repeat; }
+a.prev { position: absolute; background-position: bottom left; }
+a.next { position: absolute; background-position: top left; }
+a.left { position: absolute; margin: -430px 0 0 15px; z-index: 99999; }
+a.right { position: absolute; margin: -164px 0 0 916px; z-index: 99999; }
+a.left:hover,
+a.right:hover { cursor: hand; cursor: pointer; }
+.grey-panel-wrapper { padding: 18px 0 0 60px; }
+
+/* Promo Slider - One
+------------------------------------------------------------ */
+.grey-panel-1 { width: 363px; height: 268px; background: url(../images/background-images/grey-panel-1.gif) no-repeat top left; }
+
+/* Promo Slider - Two
+------------------------------------------------------------ */
+.grey-panel-2 { width: 363px; height: 268px; background: url(../images/background-images/grey-panel-2.gif) no-repeat top left; }
+
+/* Promo Slider - Three
+------------------------------------------------------------ */
+.grey-panel-3 { width: 363px; height: 268px; background: url(../images/background-images/grey-panel-3.gif) no-repeat top left; }
+
+/* Promo Slider - Four
+------------------------------------------------------------ */
+.grey-panel-4 { width: 363px; height: 268px; background: url(../images/background-images/grey-panel-4.gif) no-repeat top left; }
+
+
+/* Sub Promo Area
+------------------------------------------------------------ */
+.sub-promo .col-1 h2 { margin-bottom: 7px; padding: 18px 90px 0 70px; height: 52px; background: url(../images/icons/sub-promo-icons.gif) no-repeat -5px top; font: 17px/18px Arial, Helvetica, sans-serif; font-weight: bold; }
+.sub-promo .col-2 h2 { margin-bottom: 7px; padding: 18px 90px 0 70px; height: 52px; background: url(../images/icons/sub-promo-icons.gif) no-repeat -5px -70px; font: 17px/36px Arial, Helvetica, sans-serif; font-weight: bold; }
+.sub-promo .col-3 h2 { margin-bottom: 7px; padding: 18px 90px 0 70px; height: 52px; background: url(../images/icons/sub-promo-icons.gif) no-repeat -5px -140px; font: 17px/18px Arial, Helvetica, sans-serif; font-weight: bold; }

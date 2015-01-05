@@ -1,0 +1,166 @@
+@charset "utf-8";
+
+/* CSS Browser Reset
+------------------------------------------------------------ */
+html, body, div, span, applet, object, iframe,h1, h2, h3, h4, h5, h6, p, blockquote, pre,a, abbr, acronym, address, big, cite, code,del, dfn, em, font, img, ins, kbd, q, s, samp,small, strike, strong, sub, sup, tt, var,b, u, i, center,dl, dt, dd, ol, ul, li,fieldset, form, label, legend,table, caption, tbody, tfoot, thead, tr, th, td { margin: 0; padding: 0; border: 0; outline: 0; font-size: 100%; vertical-align: baseline; background: transparent; }
+body { line-height: 1; }
+ol, ul { list-style: none; }
+blockquote, q { quotes: none; }
+blockquote:before, blockquote:after,
+q:before, q:after { content: ''; content: none; }
+
+/* remember to define focus styles!
+------------------------------------------------------------ */
+:focus { outline: 0; }
+
+/* remember to highlight inserts somehow!
+------------------------------------------------------------ */
+ins { text-decoration: none; }
+del { text-decoration: line-through; }
+
+/* tables still need 'cellspacing="0"' in the markup
+------------------------------------------------------------ */
+table { border-collapse: collapse; border-spacing: 0; }
+
+/* Layout Styles
+------------------------------------------------------------ */
+body { font: 11px/14px Arial, Helvetica, sans-serif; }
+body { margin: 0 auto; background: #e5f1f4 url(../images/background-images/body-bg-grad.jpg) repeat-x top left; }
+.header { margin: 0 auto; padding-top: 6px; width: 960px; height: 86px; background: url(../images/background-images/header-bg.gif) repeat-x top left; }
+.header .logo { margin: 0 0 0 23px; width: 133px; height: 44px; background: url(../images/logo/auxilio-logo.png) no-repeat top left; clear: right; }
+.header .search-wrapper { margin: -30px 24px 0 0; float: right; clear: both; }
+.header .search-wrapper ul { list-style-type: none; }
+.header .search-wrapper ul li { float: left; }
+.header .search-wrapper ul li.srch-txt { padding-right: 5px; line-height: 20px; color: #fff; opacity: 0.6; filter: alpha(opacity=60); }
+.header .search-wrapper ul li input[type=text] { padding: 3px 2px 2px 3px; width: 111px; height: 15px; text-align: left; background: #5884ac; border: 1px solid #a7c6df; font-size: 11px; color: #fff; }
+.header .search-wrapper ul li .arrow { margin-left: 1px; width: 20px; height: 20px; background: url(../images/buttons/srch-arrow.gif) no-repeat top left; border: none; }
+.header .search-wrapper ul li .arrow:hover { cursor: pointer; cursor: hand; }
+.building-bg { margin: 0 auto; width: 960px; height: 515px; background: url(../images/background-images/slide-bg.png) no-repeat top left; }
+.building-bg div { padding: 14px 0 14px 27px; }
+.building-bg div h1 { font: 700 32px Arial, Helvetica, sans-serif; color: #fff; letter-spacing: .014em; }
+.building-bg div h2 { margin-top: 5px; font: 700 16px Arial, Helvetica, sans-serif; color: #fff; }
+.slider-wrapper { margin: 0 auto; width: 960px; }
+.sub-promo-bg { margin: 0 auto; width: 960px; height: 234px; background: url(../images/background-images/sub-promo-grad-bg.png) repeat-x top left; border-top: 1px solid #acacac; }
+.footer { margin: 0 auto; width: 960px; height: 30px; background: #8f9799; border: none; }
+.footer ul { list-style-type: none; }
+.footer ul li { float: left; color: #fff; line-height: 30px; }
+.footer ul li.copy { padding-left: 30px; }
+.footer ul li a:link,
+.footer ul li a:visited { padding-left: 15px; color: #fff; text-decoration: none; display: block; }
+.footer ul li a:hover { text-decoration: underline; }
+
+/* Header Navigation Styles
+------------------------------------------------------------ */
+.header-nav-wrapper { width: 960px }
+.header-nav-wrapper ul { padding: 9px 5px 0; }
+.header-nav-wrapper ul li { float: left; }
+.header-nav-wrapper ul li a { margin-bottom: 2px; padding: 0 24px; display: block; }
+.header-nav-wrapper ul li a:link,
+.header-nav-wrapper ul li a:visited { font: 13px/24px Arial, Helvetica, sans-serif; font-weight: bold; color: #fff; text-decoration: none; text-transform: uppercase; }
+.header-nav-wrapper ul li.pipe { width: 1px; height: 24px; background: url(../images/background-images/vert-pipe.png) no-repeat center left; }
+
+/* Anchor Rollover Setup
+------------------------------------------------------------ */
+#comp-sub, #serv-sub, #hosp-part-sub, #media-sub, #invtr-sub, #contact-sub, #faq-sub { display: none; }
+
+/* Header Sub Menu Styles
+------------------------------------------------------------ */
+
+/* Company */
+#comp-sub { position: absolute; margin: 0 0 0 -5px; padding: 5px; width: 150px; height: auto; background: #e5ffcc; border: 1px solid #999; border-top: none; z-index: 10000; }
+#comp-sub ul { padding: 0; }
+#comp-sub ul li { padding: 0 0 5px 0; float: none; }
+#comp-sub ul li a:link,
+#comp-sub ul li a:visited { margin: 0; padding: 0 0 0 23px; font: 11px/14px Arial, Helvetica, sans-serif; font-weight: normal; color: #333; text-decoration: none; text-transform: capitalize; }
+#comp-sub ul li a:hover { text-decoration: underline; }
+
+/* Services */
+#serv-sub { position: absolute; margin: 0 0 0 -3px; padding: 5px; width: 150px; height: auto; background: #e5ffcc; border: 1px solid #999; border-top: none; z-index: 10000; }
+#serv-sub ul { padding: 0; }
+#serv-sub ul li { padding: 0 0 5px 0; float: none; }
+#serv-sub ul li a:link,
+#serv-sub ul li a:visited { margin: 0; padding: 0 0 0 21px; font: 11px/14px Arial, Helvetica, sans-serif; font-weight: normal; color: #333; text-decoration: none; text-transform: capitalize; }
+#serv-sub ul li a:hover { text-decoration: underline; }
+
+/* Hospital Partners */
+#hosp-part-sub { position: absolute; margin: 0 0 0 -3px; padding: 5px; width: 180px; height: auto; background: #e5ffcc; border: 1px solid #999; border-top: none; z-index: 10000; }
+#hosp-part-sub ul { padding: 0; }
+#hosp-part-sub ul li { padding: 0 0 5px 0; float: none; }
+#hosp-part-sub ul li a:link,
+#hosp-part-sub ul li a:visited { margin: 0; padding: 0 0 0 21px; font: 11px/14px Arial, Helvetica, sans-serif; font-weight: normal; color: #333; text-decoration: none; text-transform: capitalize; }
+#hosp-part-sub ul li a:hover { text-decoration: underline; }
+
+/* Media Center */
+#media-sub { position: absolute; margin: 0 0 0 -3px; padding: 5px; width: 150px; height: auto; background: #e5ffcc; border: 1px solid #999; border-top: none; z-index: 10000; }
+#media-sub ul { padding: 0; }
+#media-sub ul li { padding: 0 0 5px 0; float: none; }
+#media-sub ul li a:link,
+#media-sub ul li a:visited { margin: 0; padding: 0 0 0 21px; font: 11px/14px Arial, Helvetica, sans-serif; font-weight: normal; color: #333; text-decoration: none; text-transform: capitalize; }
+#media-sub ul li a:hover { text-decoration: underline; }
+
+/* Promo Slider Styles
+------------------------------------------------------------ */
+.scrollable { margin: -413px auto 0 auto; position: relative; overflow: hidden; width: 960px; height: 304px; clear: both; }
+.scrollable div { float: left; display: block; width: 960px; }
+.scrollable .items { width: 20000em; position: absolute; clear: both; }
+.scrollable .active { z-index: 9999; position: relative; }
+a.browse { position: absolute; width: 28px; height: 25px; background: url(../images/buttons/arrow-next-prev-sprite.png) no-repeat; }
+a.prev { position: absolute; background-position: bottom left; }
+a.next { position: absolute; background-position: top left; }
+a.left { position: absolute; margin: 140px 0 0 15px; z-index: 99999; }
+a.right { position: absolute; margin: -164px 0 0 916px; z-index: 99999; }
+a.left:hover,
+a.right:hover { cursor: hand; cursor: pointer; }
+.grey-panel-wrapper { padding: 18px 0 0 60px; }
+
+/* Promo Slider - One
+------------------------------------------------------------ */
+.grey-panel-1 { width: 363px; height: 268px; background: url(../images/background-images/grey-panel-1.png) no-repeat top left; }
+.grey-panel-1 .btn-view-study { position: absolute; margin: 218px 0 0 103px; width: 150px; height: 38px; background: none; border: none; }
+.grey-panel-1 .btn-view-study:hover { cursor: hand; cursor: pointer; }
+.grey-panel-1 .btn-view-study span { display: none; }
+
+/* Promo Slider - Two
+------------------------------------------------------------ */
+.grey-panel-2 { width: 363px; height: 268px; background: url(../images/background-images/grey-panel-2.png) no-repeat top left; }
+.grey-panel-2 .btn-view-study { position: absolute; margin: 218px 0 0 103px; width: 150px; height: 38px; background: none; border: none; }
+.grey-panel-2 .btn-view-study:hover { cursor: hand; cursor: pointer; }
+.grey-panel-2 .btn-view-study span { display: none; }
+
+/* Promo Slider - Three
+------------------------------------------------------------ */
+.grey-panel-3 { width: 363px; height: 268px; background: url(../images/background-images/grey-panel-3.png) no-repeat top left; }
+.grey-panel-3 .btn-view-study { position: absolute; margin: 218px 0 0 103px; width: 150px; height: 38px; background: none; border: none; }
+.grey-panel-3 .btn-view-study:hover { cursor: hand; cursor: pointer; }
+.grey-panel-3 .btn-view-study span { display: none; }
+
+/* Promo Slider - Four
+------------------------------------------------------------ */
+.grey-panel-4 { width: 363px; height: 268px; background: url(../images/background-images/grey-panel-4.png) no-repeat top left; }
+.grey-panel-4 .btn-view-study { position: absolute; margin: 218px 0 0 103px; width: 150px; height: 38px; background: none; border: none; }
+.grey-panel-4 .btn-view-study:hover { cursor: hand; cursor: pointer; }
+.grey-panel-4 .btn-view-study span { display: none; }
+
+/* Sub Promo Area
+------------------------------------------------------------ */
+.sub-promo { position: absolute; margin: 0 auto; width: 960px; height: 235px; clear: both; }
+.sub-promo ul { margin: 0 auto; padding: 25px;  }
+.sub-promo ul li { width: 29%; min-height: 190px; float: left; }
+.sub-promo .col-1 { padding-right: 25px; }
+.sub-promo .col-2 { padding: 0 25px; border-left: 1px solid #ccc; border-right: 1px solid #ccc; }
+.sub-promo .col-3 { padding-left: 25px; }
+.sub-promo .col-1 h2 a:link,
+.sub-promo .col-1 h2 a:visited,
+.sub-promo .col-2 h2 a:link,
+.sub-promo .col-2 h2 a:visited,
+.sub-promo .col-3 h2 a:link,
+.sub-promo .col-3 h2 a:visited { color: #fff; text-decoration: none; }
+.sub-promo .col-1 h2 a:hover,
+.sub-promo .col-2 h2 a:hover,
+.sub-promo .col-3 h2 a:hover { text-decoration: underline; }
+.sub-promo .col-1 h2 { margin-bottom: 7px; padding: 18px 90px 0 70px; height: 52px; background: url(../images/icons/sub-promo-icons.png) no-repeat -5px top; font: 17px/18px Arial, Helvetica, sans-serif; font-weight: bold; }
+.sub-promo .col-2 h2 { margin-bottom: 7px; padding: 18px 90px 0 70px; height: 52px; background: url(../images/icons/sub-promo-icons.png) no-repeat -5px -70px; font: 17px/36px Arial, Helvetica, sans-serif; font-weight: bold; }
+.sub-promo .col-3 h2 { margin-bottom: 7px; padding: 18px 90px 0 70px; height: 52px; background: url(../images/icons/sub-promo-icons.png) no-repeat -5px -140px; font: 17px/18px Arial, Helvetica, sans-serif; font-weight: bold; }
+.sub-promo .col-1 p,
+.sub-promo .col-2 p,
+.sub-promo .col-3 p { font: 14px/16px Arial, Helvetica, sans-serif; color: #fff; font-weight: 500; }

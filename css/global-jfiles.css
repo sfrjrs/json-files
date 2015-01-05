@@ -1,0 +1,67 @@
+@charset "utf-8";
+/* CSS Document */
+
+/* Browser Resets ----- */
+h1,h2,h3,h4,h5,h6,table,div,form,ul,li,p { margin: 0; padding: 0; }
+
+/* Generic Styles ----- */
+html { overflow-y: scroll; }
+body { margin: 0; padding: 0; background: #333333; font-family: Arial, Helvetica, sans-serif; font-size: 80%; text-align: center; }
+.pad-0-20 { padding: 0px 20px; }
+.margTop15 { margin-top: 15px; }
+.margBottom10 { margin-bottom: 10px; }
+
+/* UI Structure ----- */
+.main-wrapper { margin: 0 auto; width: 1000px; height: auto; }
+.header { width: 100%; height: 130px; background: url(../images/ui/jsport-ui-sprite.jpg) no-repeat left top; }
+.header span { display: none; }
+.logo-home { margin: 25px 0 0 8px; float: left; }
+.random-banner {}
+.content-area { background: url(../images/ui/jsport-ui-sprite.jpg) repeat-y -2000px top; }
+.content-area .top { width: 100%; height: 12px; background: url(../images/ui/jsport-ui-sprite.jpg) no-repeat -1000px top; }
+.content-area .middle { width: 100%; height: auto; text-align: left; }
+.content-area .bottom { width: 100%; height: 18px; background: url(../images/ui/jsport-ui-sprite.jpg) no-repeat -3000px bottom; }
+.jsfooter { width: 100%; height: 80px; background: url(../images/ui/jsport-ui-sprite.jpg) repeat-y -4000px bottom; }
+.copy { margin: 12px 0 0 25px; color: #999999; float: left; }
+.hostedby { margin: 12px 25px 0 0; float: right; }
+.hostedby a:link, .hostedby a:visited { color: #666666; text-decoration: none; }
+.hostedby a:hover { color: #009900; }
+.hostedby span { color: #999999; }
+.w3c-logo { margin: 15px 0 5px 20px; }
+
+/* Navigation Menu ----- */
+.navmenu-wrapper { margin: 0; padding: 0; width: auto; float: left; clear: both; }
+.navpad { /*padding: 27px 0 0 20px; #*/padding: 30px 0 0 20px; }
+.navmenu { display: inline; list-style-type: none; font-family: "Trebuchet MS"; font-size: 85%; font-weight: bold; }
+.navmenu li { float: left; }
+.navmenu .divider { color: #999999; }
+.navmenu li a:link, .navmenu li a:visited { color: #666666; text-decoration: none; }
+.navmenu li a:hover { color: #000000; text-decoration: underline; }
+
+/* Inspiration Section ----- */
+#gallery-wrapper h2 { font-size: 120%; }
+.inspire-section-cont { margin-bottom: 15px; padding: 4px 0 0 4px; background: #f7f7f7; border: 1px solid #cccccc; }
+.inspire-section { list-style-type: none; display: block; }
+.inspire-section li { display: inline; }
+.inspire-section li a img { padding: 0 2px 0 3px; border: none; }
+
+/* About Page Styles ----- */
+.about-cont { }
+#ajaxContent h2, .about-cont h2 { font-size: 120%; }
+.about-cont p { margin-bottom: 10px; }
+.the-fam-photo { margin: 8px 5px 15px 15px; width: 364px; height: 250px; background: url(../images/the-fam.jpg) no-repeat left top; display: block; float: right; }
+
+/* Contact Page Styles ----- */
+.contact-form-cont { margin: 0; padding: 0; width: 350px; height: auto; background: #FFF; text-align: left; }
+.contact-form-title { margin-bottom: 25px; border-bottom: 1px solid #999999; }
+.contact-form-title h2 { font-size: 120%; }
+.contact-form-list { list-style-type: none; }
+.contact-form-list div { padding-bottom: 5px; display: block; }
+.contact-form-list .leftcol { width: 85px; float: left; }
+.contact-form-list .rightcol {}
+.btn-reset, .btn-submit { display: inline; }
+.btn-reset { margin-left: 75px; float: left; clear: right; }
+.btn-submit { margin-left: 180px; clear: left; }
+
+/* Confirmation Page Styles ------ */
+.confirm-cont { position: relative; margin: 25em auto 0 auto; padding: 25px 0 0; width: 300px; height: 100px; background: url(../images/ui/confirm-dropshadow.jpg) no-repeat left top; }
